@@ -1,0 +1,54 @@
+@font-face {
+    font-family: titulo;
+    src: url("/fonts/PatrickHand-Regular.ttf");
+ }
+ *{ 
+     padding-right: 4%;
+     padding-left: 4%;
+ }
+#div1 {
+    background: rgb(26, 12, 128);
+    font-family: titulo;
+    grid-area: 1 / 1 / 2 / 3;
+}
+#div2{
+    background-color: brown;
+    font-family: titulo;
+    padding-top: 0%;
+    grid-area: 2 / 1 / 7 / 2;
+}
+#div3{
+    background-color: rgb(234, 14, 50);
+    grid-area: 2 / 2 / 7 / 3; 
+}
+#div4{
+    background-color: rgb(42, 165, 116);
+}
+
+select {
+    overflow-y: hidden;
+}
+#parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    .btn {
+        background-color: transparent;
+        color: white;
+        border:none;
+      }
+      .btn:hover {
+        transform: scale(1.2);
+      }
+      .btn:active{
+        transform: rotate(20deg);
+      }
+
+      #fundo{
+         width: 80%;
+         padding: 2px;
+        margin: 2px;
+        }

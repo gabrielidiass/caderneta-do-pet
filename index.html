@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estiloso.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Caderneta do pet
+    </title>
+</head>
+
+<body>
+    <div id="parent">
+
+
+        <div id="div1">
+            <h1>Crie um card para o seu pet</h1>
+        </div>
+
+        <div id="div2">
+            Qual é o nome do seu pet?
+            <br>
+            <input type="text">
+            <br><br>
+            Qual é a sua espécie?
+            <br>
+            <select id="especie">
+                <option> Cachorro </option>
+                <option> Gato </option>
+                <option> Passarinho </option>
+                <option> Tartaruga </option>
+            </select>
+
+            <br><br>
+            <input type="checkbox" value="macho">Macho
+            <br>
+            <input type="checkbox" value="fêmea">Fêmea
+            <br>
+            
+         Como você descreveria a personalidade dele?
+            <br>
+            <select id="lista_características" multiple>
+                <option> Bagunceiro </option>
+                <option> Mimado </option>
+                <option> Carinhoso </option>
+                <option> Bravo </option>
+            </select>
+            <select id="poderes" multiple></select>
+
+            <br>
+            <input type="text" placeholder="outra">
+            <br><br>
+            Nos mostre uma foto!
+            <input id="img" class="imagem" type="file" name="img" />
+            <input type="button" id="carregar" name="carregar" value="carregar imagem">
+            TROCAR BOTAO DPS
+    <br>
+            <br><br>
+    
+            Criar card
+          <button class="btn"><i class="material-symbols-outlined">arrow_forward</i></button>
+           <br><br>
+        </div>
+
+        <div id="div3">
+            <img src="" id="card" name="card" alt="">
+        </div>
+    </div>
+
+    <button onclick="mostraImagem()">TESTA FUNCAO</button>
+
+    <script src="/js/sortear_fundo.js"></script>
+</body>
+
+</html>
